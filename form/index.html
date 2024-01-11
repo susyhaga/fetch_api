@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FETCH API FORM VALIDATION</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div>
+        <span id="span"></span>
+    </div>
+    <div class="container">
+        <form method = "post" id="form">
+            <div class="row mt-5">
+                <h4>Basic information</h4>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <input type="name"class="form-control" id="name" placeholder="Name"required>
+                </div>
+                <div class="col-5">
+                    <input type="text"class="form-control" id="user" placeholder="Username" required> 
+                </div>
+                <div class="col-4">
+                    <input type="email"class="form-control" id="email" placeholder="E-mail"required>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <h4>Delivery information</h4>
+            </div>
+            <div class="row mb-5">
+                <div class="col-3 d-flex">
+                    <input type="text"class="form-control" placeholder="Zipcode" id="cep" required>
+                    <button type="button" class="btn btn-primary" id="btn-cep-finder">
+                        <i class="bi bi-search"></i>
+                        <span class="spinner-border spinner-border-sm d-none"></span>
+                    </button>
+                </div>
+                <div class="col-7">
+                    <input type="text"class="form-control" placeholder="Company" id='company'>
+                </div>
+                <div class="col-7">
+                    <input type="text"class="form-control" placeholder="Address" id='address'>
+                </div>
+                <div class="col-2">
+                    <input type="text"class="form-control" placeholder="Phone"id='phone'>
+                </div>
+            </div>
+            <button type="button" class="btn btn-warning" id="botao">Load page</button>
+            <button type="button" class="btn btn-success" id="botao2">Submit</button>
+
+        </form>
+    </div>
+
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/jquery.mask.min.js"></script>
+    <script src="./scripts/fetch_get_api.js"></script>
+    <script src="./scripts/get.js"></script>
+</body>
+</html>
