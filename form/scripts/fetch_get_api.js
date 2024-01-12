@@ -73,7 +73,7 @@ $(document).ready(function(){
             $("#name").val(name);
             $("#user").val(user);
             $("#email").val(email);
-            $("company").val(company);
+            $("#company").val(company);
             $("#phone").val(phone);
 
             count++;
