@@ -71,10 +71,10 @@ $(document).ready(function(){
             
 
             $("#name").val(name);
-            $("#email").val(user);
-            $("#company").val(email);
-            $("#phone").val(company);
-            $("#user").val(phone);
+            $("#user").val(user);
+            $("#email").val(email);
+            $("company").val(company);
+            $("#phone").val(phone);
 
             count++;
         })
