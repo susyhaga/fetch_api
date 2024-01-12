@@ -79,7 +79,7 @@ $(document).ready(function(){
             count++;
         })
 
-        .catch(function(error){
+        .catch(error =>{
             alert('Error! Please try again');
         })
     });
