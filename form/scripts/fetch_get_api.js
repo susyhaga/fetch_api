@@ -18,11 +18,11 @@ $(document).ready(function(){
 
             
         fetch(endpoint)
-        .then(function(resposta){
+        .then(resposta =>{
             return resposta.json();
         })
 
-        .then(function(resposta){
+        .then(resposta => {
             const logradouro = resposta.logradouro;
             const bairro = resposta.bairro;
             const cidade = resposta.localidade;
@@ -56,11 +56,11 @@ $(document).ready(function(){
     $("#botao").click(function(){
 
         fetch(`https://jsonplaceholder.typicode.com/users`)
-        .then(function(data){
+        .then(data => {
             return data.json();
         })
 
-        .then(function(json){
+        .then(json =>{
 
 
             const name= json[count]['name']
